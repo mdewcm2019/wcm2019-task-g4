@@ -5,3 +5,5 @@ https://chiamingyen.github.io/cmsimfly
 
 Github pages
 https://mdewcm2019.github.io/wcm2019-task-g4/content/
+Blogger
+https://wcm2019-g4.blogspot.com/
