@@ -445,11 +445,13 @@ COPY TO CLIPBOARD	</pre>
 <h2>已知錯誤</h2>
 <h4>全部頁面會因無法正確解讀而誤刪</h4>
 <p>在特定情況下, 系統會誤刪 config/content.htm 檔案, 目前在單頁或全部頁面編輯存檔之前, 或將上一版本的 content.htm 存入 content_back.htm, 若 content.htm 內容被程式誤刪, 可以利用備份檔案複製回原始內容後, 再進行後續處理.</p>
+<ul>
+<li>解決：當上一版的<span> content.htm 被存在 content_back.htm 且內容的 htm未被刪除時（ <span>content.htm<span>  裡內容只剩 head1）</span></span>，可手動將 <span>content.htm<span> 刪除或更名（切勿與 content_back.htm 同名以免搞混或被覆蓋掉）再把 content_back.htm 更名為 content.htm ，這樣就可以讀到上版本 content.htm </span></span></span></li>
+</ul>
 <h4>頁面標題不支援特殊符號</h4>
 <p>各頁面標題目前不支援特殊符號, 例如: "/", "?" 等, 若已經發生程式無法解讀頁面的情況, 只能從編輯 config/content.htm 下手, 若系統位於遠端, 則後續必須要再設法提供一個額外的編輯 config/content.htm 檔案的網際連結功能.</p>
 <h4>Video 引用不支援內部引用</h4>
-<p>tinymce 中插入 video 的小視窗, 要移除引用的圖像與連結, 因為一般建議不要在內容中存入 .mp4 的影片資料, 而只接受引入影片 URL 連結.</p>
-<h1>網路連線設定</h1>
+<p>tinymce 中插入 video 的小視窗, 要移除引用的圖像與連結, 因為一般建議不要在內容中存入 .mp4 的影片資料, 而只接受引入影片 URL 連結.</p><h1>網路連線設定</h1>
 <p><span>了解機械設計系電腦輔助設計室電腦的網路設定, 其中包括 IPv4 網路與 IPv6 網路設定.</span></p>
 <p>首先開啟網路連線</p>
 <p><img alt="" height="284" src="/images/explorer_PtdGgWupjs.png" width="484"/></p>
@@ -864,7 +866,8 @@ function myFunction() {
 <ul>
 <li>原因：<span style="background-color: #ffff99;">&lt;![CDATA[ ]]&gt;</span> 的 tag 在 XML 執行程式的語法，但網頁轉為靜態後是 HTML ,因此在 <span style="background-color: #ffff99;">&lt;![CDATA[ ]]&gt;</span><span> 的 tag 前的斜線會變成註解，導致無法執行程式，所以在轉換成靜態的時候把 <span style="background-color: #ffff99;">&lt;![CDATA[ ]]&gt;</span><span> 替換成空字串，就可以順利執行程式</span></span></li>
 </ul>
-<p><img caption="false" height="465" src="/images/chrome_2019-05-07_17-29-32.png" width="500"/></p><h3>ROC flag</h3>
+<p><img caption="false" height="465" src="/images/chrome_2019-05-07_17-29-32.png" width="500"/></p>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/cmzXKrmXCfo" width="560"></iframe></p><h3>ROC flag</h3>
 <!-- 導入 Brython 標準程式庫 -->
 <script src="/static/brython.js"></script>
 <script src="/static/brython_stdlib.js"></script>

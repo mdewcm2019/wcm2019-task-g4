@@ -81,8 +81,10 @@ $(document).ready(doSearch);
 <div class='container'><nav><ul id='css3menu1' class='topmenu'><div class="tipue_search_group"><input style="width: 6vw;" type="text" name="q" id="tipue_search_input" pattern=".{2,}" title="Press enter key to search" required></div><li><a href='內建資料.html'>內建資料</a><ul><li><a href='目錄結構.html'>目錄結構</a><li><a href='頁面編輯.html'>頁面編輯</a><ul><li><a href='插入程式碼.html'>插入程式碼</a></li></ul><li><a href='網際簡報.html'>網際簡報</a><li><a href='網誌編輯.html'>網誌編輯</a><li><a href='已知錯誤.html'>已知錯誤</a></li></ul><li><a href='網路連線設定.html'>網路連線設定</a><li><a href='配置可攜程式環境.html'>配置可攜程式環境</a><li><a href='倉儲改版.html'>倉儲改版</a><ul><li><a href='建立 Git 倉儲.html'>建立 Git 倉儲</a><li><a href='Git 指令.html'>Git 指令</a><li><a href='建立SSH key.html'>建立SSH key</a></li></ul><li><a href='靜態CMSimfly.html'>靜態CMSimfly</a><ul><li><a href='Game1.html'>Game1</a><li><a href='繪圖.html'>繪圖</a><ul><li><a href='ROC flag.html'>ROC flag</a><li><a href='Spur Gears.html'>Spur Gears</a></li></li></ul></ul><li><a href='Mobile 網站內容.html'>Mobile 網站內容</a><li><a href='Virtual Host.html'>Virtual Host</a><li><a href='期中報告.html'>期中報告</a></li></ul></nav><section><div id="tipue_search_content">網誌編輯 << <a href='網誌編輯.html'>Previous</a> <a href='網路連線設定.html'>Next</a> >> 網路連線設定<br /><h1>已知錯誤</h1>
 <h4>全部頁面會因無法正確解讀而誤刪</h4>
 <p>在特定情況下, 系統會誤刪 config/content.htm 檔案, 目前在單頁或全部頁面編輯存檔之前, 或將上一版本的 content.htm 存入 content_back.htm, 若 content.htm 內容被程式誤刪, 可以利用備份檔案複製回原始內容後, 再進行後續處理.</p>
+<ul>
+<li>解決：當上一版的<span> content.htm 被存在 content_back.htm 且內容的 htm未被刪除時（ <span>content.htm<span>  裡內容只剩 head1）</span></span>，可手動將 <span>content.htm<span> 刪除或更名（切勿與 content_back.htm 同名以免搞混或被覆蓋掉）再把 content_back.htm 更名為 content.htm ，這樣就可以讀到上版本 content.htm </span></span></span></li>
+</ul>
 <h4>頁面標題不支援特殊符號</h4>
 <p>各頁面標題目前不支援特殊符號, 例如: "/", "?" 等, 若已經發生程式無法解讀頁面的情況, 只能從編輯 config/content.htm 下手, 若系統位於遠端, 則後續必須要再設法提供一個額外的編輯 config/content.htm 檔案的網際連結功能.</p>
 <h4>Video 引用不支援內部引用</h4>
-<p>tinymce 中插入 video 的小視窗, 要移除引用的圖像與連結, 因為一般建議不要在內容中存入 .mp4 的影片資料, 而只接受引入影片 URL 連結.</p>
-<br />網誌編輯 << <a href='網誌編輯.html'>Previous</a> <a href='網路連線設定.html'>Next</a> >> 網路連線設定</div></section></div></body></html>
+<p>tinymce 中插入 video 的小視窗, 要移除引用的圖像與連結, 因為一般建議不要在內容中存入 .mp4 的影片資料, 而只接受引入影片 URL 連結.</p><br />網誌編輯 << <a href='網誌編輯.html'>Previous</a> <a href='網路連線設定.html'>Next</a> >> 網路連線設定</div></section></div></body></html>
