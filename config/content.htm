@@ -451,7 +451,8 @@ COPY TO CLIPBOARD	</pre>
 <h4>頁面標題不支援特殊符號</h4>
 <p>各頁面標題目前不支援特殊符號, 例如: "/", "?" 等, 若已經發生程式無法解讀頁面的情況, 只能從編輯 config/content.htm 下手, 若系統位於遠端, 則後續必須要再設法提供一個額外的編輯 config/content.htm 檔案的網際連結功能.</p>
 <h4>Video 引用不支援內部引用</h4>
-<p>tinymce 中插入 video 的小視窗, 要移除引用的圖像與連結, 因為一般建議不要在內容中存入 .mp4 的影片資料, 而只接受引入影片 URL 連結.</p><h1>網路連線設定</h1>
+<p>tinymce 中插入 video 的小視窗, 要移除引用的圖像與連結, 因為一般建議不要在內容中存入 .mp4 的影片資料, 而只接受引入影片 URL 連結.</p>
+<h1>網路連線設定</h1>
 <p><span>了解機械設計系電腦輔助設計室電腦的網路設定, 其中包括 IPv4 網路與 IPv6 網路設定.</span></p>
 <p>首先開啟網路連線</p>
 <p><img alt="" height="284" src="/images/explorer_PtdGgWupjs.png" width="484"/></p>
@@ -501,7 +502,23 @@ COPY TO CLIPBOARD	</pre>
 <p><span>自行建立靜態內容管理網站</span></p>
 <p>利用 CMSimfly (<a href="https://github.com/chiamingyen/cmsimfly">https://github.com/chiamingyen/cmsimfly</a>)內容,，將其clone至可攜系統，並利用啟動近端來編輯內容改版使遠端內容更新</p>
 <p><img alt="" height="386" src="/images/clone URL.JPG" width="650"/></p>
+<h2>編輯內容</h2>
+<p style="text-align: left;">學習如何使用 CMSimfly，在網站中加入各種內容</p>
+<p>左方標題可以利用&lt;h1&gt;名稱&lt;/h1&gt;來增加，h1.2.3.....可使目錄內含有子目錄，依此類推進而改變或新增其內容</p>
+<p><img alt="" height="457" src="/images/h1h2h3.JPG" width="650"/></p>
+<p>內容編輯:</p>
+<p><strong>Insert/edit link</strong>:將文字賦予連結至網址功能</p>
+<p><img alt="" height="418" src="/images/edit(insert link).JPG" width="650"/></p>
+<p><strong>Insert/edit image</strong>:將圖片放置於內容中(需先將圖片放置於image資料夾中)</p>
+<p><img alt="" height="418" src="/images/edit(insert image).JPG" width="650"/></p>
+<p><strong>Insert/edit video</strong>:將影片放置於內容中</p>
+<p><img alt="" height="418" src="/images/edit(insert video).JPG" width="650"/></p>
+<p><strong>Source code</strong>:可看到當下頁面的html程式碼</p>
+<p><img alt="" height="418" src="/images/edit(source code).JPG" width="650"/></p>
+<p><strong>Insert/edit Code</strong>:將文字轉換為Python/C++/Java......等程式語言</p>
+<p><img alt="" height="418" src="/images/edit(insert code).JPG" width="650"/></p>
 <h2>Game1</h2>
+<p>
 <script type="text/javascript">
 var cwidth = 400;
 	var cheight = 300;
@@ -653,6 +670,7 @@ function draw2mid() {
 	ctx.fill();
 }
 </script>
+</p>
 <p><canvas height="300" id="canvas" width="400"> Your browser doesn't support the HTML5 element canvas. </canvas> <br/> <button onclick="throwdice();">Throw dice </button></p>
 <form id="f" name="f">Stage: <input name="stage" type="text" value="First Throw"/> Point: <input name="pv" type="text" value="   "/> Outcome: <input name="outcome" type="text" value="     "/></form>
 <p>上述程式原始碼</p>
@@ -812,11 +830,13 @@ function draw2mid() {
 <p></p>
 <p><button onclick="myFunction()">Try it</button></p>
 <p id="demo"></p>
+<p>
 <script>
 function myFunction() {
   document.getElementById("demo").innerHTML = Math.floor(Math.random()*10);
 }
 </script>
+</p>
 <pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false">&lt;p&gt;&lt;button onclick="myFunction()"&gt;Try it&lt;/button&gt;&lt;/p&gt;
 &lt;p id="demo"&gt;&lt;/p&gt;
 &lt;script&gt;// &lt;![CDATA[
@@ -867,19 +887,23 @@ function myFunction() {
 <li>原因：<span style="background-color: #ffff99;">&lt;![CDATA[ ]]&gt;</span> 的 tag 在 XML 執行程式的語法，但網頁轉為靜態後是 HTML ,因此在 <span style="background-color: #ffff99;">&lt;![CDATA[ ]]&gt;</span><span> 的 tag 前的斜線會變成註解，導致無法執行程式，所以在轉換成靜態的時候把 <span style="background-color: #ffff99;">&lt;![CDATA[ ]]&gt;</span><span> 替換成空字串，就可以順利執行程式</span></span></li>
 </ul>
 <p><img caption="false" height="465" src="/images/chrome_2019-05-07_17-29-32.png" width="500"/></p>
-<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/cmzXKrmXCfo" width="560"></iframe></p><h3>ROC flag</h3>
-<!-- 導入 Brython 標準程式庫 -->
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/cmzXKrmXCfo" width="560"></iframe></p>
+<h3>ROC flag</h3>
+<p><!-- 導入 Brython 標準程式庫 -->
 <script src="/static/brython.js"></script>
 <script src="/static/brython_stdlib.js"></script>
+</p>
 <p></p>
-<!-- 啟動 Brython -->
+<p><!-- 啟動 Brython -->
 <script>
 window.onload=function(){
 // 設定 data/py 為共用程式路徑
 brython({debug:1, pythonpath:['./../data/py']});
 }
 </script>
+</p>
 <p><canvas height="400" id="plotarea" width="600"></canvas></p>
+<p>
 <script type="text/python">
 # 導入 doc
 from browser import document as doc
@@ -933,21 +957,25 @@ ctx.closePath()
 ctx.fillStyle = '#fff'
 ctx.fill()
 </script>
+</p>
 <h3>Spur Gears</h3>
-<!-- 導入 Brython 標準程式庫 -->
+<p><!-- 導入 Brython 標準程式庫 -->
 <script src="/static/brython.js"></script>
 <script src="/static/brython_stdlib.js"></script>
+</p>
 <p></p>
-<!-- 啟動 Brython -->
+<p><!-- 啟動 Brython -->
 <script>
 window.onload=function(){
 // 設定 data/py 為共用程式路徑
 brython({debug:1, pythonpath:['./../data/py']});
 }
 </script>
+</p>
 <p><canvas height="600" id="onegear" width="800"></canvas></p>
 <div height="20" id="onegear_div" width="800"></div>
 <p><input id="n1" type="text" value="13"/><br/> <input id="n2" type="text" value="11"/><br/> <input id="n3" type="text" value="17"/><br/> <button id="button">Set Number of Gears</button></p>
+<p>
 <script type="text/python3">
 from browser import document as doc
 from browser import html
@@ -1150,22 +1178,10 @@ input3 = html.INPUT(type="text", id="n3", name="n3", value="19")
 div <= input1 + html.BR() + input2 + html.BR() + input3
 '''
 doc['button'].bind('click',setgearnumber)
-</script><h1>Mobile 網站內容</h1>
-<p style="text-align: left;">學習如何使用 CMSimfly，在網站中加入各種內容</p>
-<p>左方標題可以利用&lt;h1&gt;名稱&lt;/h1&gt;來增加，h1.2.3.....可使目錄內含有子目錄，依此類推進而改變或新增其內容</p>
-<p><img alt="" height="457" src="/images/h1h2h3.JPG" width="650"/></p>
-<p>內容編輯:</p>
-<p><strong>Insert/edit link</strong>:將文字賦予連結至網址功能</p>
-<p><img alt="" height="418" src="/images/edit(insert link).JPG" width="650"/></p>
-<p><strong>Insert/edit image</strong>:將圖片放置於內容中(需先將圖片放置於image資料夾中)</p>
-<p><img alt="" height="418" src="/images/edit(insert image).JPG" width="650"/></p>
-<p><strong>Insert/edit video</strong>:將影片放置於內容中</p>
-<p><img alt="" height="418" src="/images/edit(insert video).JPG" width="650"/></p>
-<p><strong>Source code</strong>:可看到當下頁面的html程式碼</p>
-<p><img alt="" height="418" src="/images/edit(source code).JPG" width="650"/></p>
-<p><strong>Insert/edit Code</strong>:將文字轉換為Python/C++/Java......等程式語言</p>
-<p><img alt="" height="418" src="/images/edit(insert code).JPG" width="650"/></p>
-<h1>Virtual Host</h1>
+</script>
+</p>
+<h1>Mobile 網站內容</h1>
+<p style="text-align: left;"></p><h1>Virtual Host</h1>
 <h1>期中報告</h1>
 <p>40723123期中影片</p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/epvczHCgvno" width="560"></iframe></p>
