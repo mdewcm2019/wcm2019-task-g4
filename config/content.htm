@@ -1181,10 +1181,12 @@ doc['button'].bind('click',setgearnumber)
 </script>
 </p>
 <h1>Mobile 網站內容</h1>
-<p style="text-align: left;"></p><h1>Virtual Host</h1>
+<p style="text-align: left;"></p>
+<h1>Virtual Host</h1>
 <p>依照老師說明來配置檔案:</p>
 <p><span>利用 Virtualbox 建立虛擬 Ubuntu 18.04 網際內容管理系統伺服主機:</span><br/><span><br/></span><span>1. 安裝最新版的 Virtualbox</span><br/><span>2. 建立 Ubuntu 18.04 虛擬主機</span><br/><span>3. 以網路卡橋接啟動 Ubuntu 伺服器</span><br/><span>4. 以 sudo apt install nginx 安裝 nginx WWW 伺服器</span><br/><span>5. 以 ifconfig 查 Ubuntu 伺服器的 IP, 測試 nginx 伺服器是否可以連線</span><br/><span>6. 以 Windows 10  下的 Filezilla client, 將編輯好的 nginx 設定檔案送到 Ubuntu</span><br/><span>7. 利用 Ubuntu 指令將設定檔案搬至設定位置後, 以 /etc/init.d/nginx restart 重新啟動 nginx</span><br/><span>8. 在 Ubuntu 中以 sudo apt install uwsgi 安裝 uwsgi</span><br/><span>9. 在 Windows 10 編輯 uwsgi 與 nginx 所需的設定檔案, 完成後以 filezilla 送至 Ubuntu.</span><br/><span>10. 將 CMSimfly 程式碼送到 Ubuntu 伺服器中對應目錄後.</span><br/><span>11. 在 Ubuntu 建立 cmsimfly 服務, 並設定隨機啟動.</span><br/><span>12. 完成後, 在 Windows 10 以瀏覽器連線至 CMSimfly, 確認動態網頁與靜態網頁可以在虛擬主機中正常啟動.</span></p>
-<p><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/RFzIajlvUw8" width="560"></iframe></span></p><h2>Ubuntu系統安裝</h2>
+<p><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/RFzIajlvUw8" width="560"></iframe></span></p>
+<h2>Ubuntu系統安裝</h2>
 <p>1.先至<a href="https://www.ubuntu.com/">Ubuntu</a>網站下載Server檔</p>
 <p>2.在Virtual Box建立一個新的virtual machine，並命名</p>
 <p><span>3.配置虛擬主機記憶體大小</span></p>
@@ -1203,7 +1205,21 @@ doc['button'].bind('click',setgearnumber)
 <p>3.接設定好後按下方的Connect連結至設定IP位置</p>
 <p>4.若連結成功即如下圖所示</p>
 <p><img alt="" height="440" src="/images/FileZilla success.JPG" width="650"/></p>
-<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/qSlVwqMIGYc" width="560"></iframe></p><h1>期中報告</h1>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/qSlVwqMIGYc" width="560"></iframe></p>
+<h2>vi 指令</h2>
+<p>sudo apt install _______ :安裝套件</p>
+<p>sudo vi _______ : 編輯檔案</p>
+<p>sudo rm _______:移除檔案</p>
+<p>sudo netplan apply : 改完網路設定後若沒有更改，用此指令來更新</p>
+<p>sudo cp (path from) (path to): 複製某路徑的檔案至所指定的位置</p>
+<p>sudo apt update: 更新狀態</p>
+<p>ls-1 :查詢當前目錄下有什麼檔案</p>
+<p>ifconfig: 查詢ip相關資訊 </p>
+<p><strong>編輯狀態下:</strong></p>
+<p>i :啟用可以輸入字元</p>
+<p>Esc: 退出可輸入字元的模式</p>
+<p>:q! :取消更改的資料</p>
+<p>:wq :儲存更改資料</p><h1>期中報告</h1>
 <p>40723123期中影片</p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/epvczHCgvno" width="560"></iframe></p>
 <p></p>
